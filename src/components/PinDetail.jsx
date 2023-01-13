@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { client, urlFor } from "../client";
@@ -41,7 +41,7 @@ const PinDetail = ({ user }) => {
     }
   }
 
-  const fetchPinDetails = () => {
+  const fetchPinDetails = useCallback(() => {
     let query = pinDetailQuery(pinId);
     if (query) {
       client.fetch(query)
@@ -54,10 +54,10 @@ const PinDetail = ({ user }) => {
           }
         });
     }
-  };
+  },[pinId])
   useEffect(() => {
     fetchPinDetails();
-  }, [pinId]);
+  }, [pinId, fetchPinDetails]);
 
   if (!pinDetails) return <Spinner message={"Loading pin."} />;
 
