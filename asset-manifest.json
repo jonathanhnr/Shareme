@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Shareme/static/css/main.9f85822c.css",
-    "main.js": "/Shareme/static/js/main.64e2fdff.js",
+    "main.js": "/Shareme/static/js/main.2ee40b9d.js",
     "static/media/share.mp4": "/Shareme/static/media/share.f758eefc9ea32c312130.mp4",
     "index.html": "/Shareme/index.html",
     "main.9f85822c.css.map": "/Shareme/static/css/main.9f85822c.css.map",
-    "main.64e2fdff.js.map": "/Shareme/static/js/main.64e2fdff.js.map"
+    "main.2ee40b9d.js.map": "/Shareme/static/js/main.2ee40b9d.js.map"
   },
   "entrypoints": [
     "static/css/main.9f85822c.css",
-    "static/js/main.64e2fdff.js"
+    "static/js/main.2ee40b9d.js"
   ]
 }
