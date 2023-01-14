@@ -13,6 +13,7 @@ env:
 jobs:
   deploy:
     runs-on: ubuntu-18.04
+    environment: github-pages
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
