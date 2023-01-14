@@ -17,7 +17,7 @@ function App() {
   return (
     <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}>
       <AuthProvider>
-        <Routes>
+        <Routes basename={process.env.NODE_ENV === "production" ? "/Shareme" : "/"}>
           <Route path={"Login"} element={<Login />} />
           <Route path={"/*"} element={<Home />} />
         </Routes>
